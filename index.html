@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solarly</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/open-sauce-sans" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <section class="menu">
+            <div class="header">
+                <div class="title-menu">
+                    <img src="./assets/img/logo.svg" alt="" class="logo-menu">
+                </div>
+                <div class="menu-collapse">
+                    <div class="btn btn-hover btn-menu-collapse" id="btn-menu-collapse">Menu</div>
+                </div>
+                <div class="navbar">
+                    <div class="nav-link nav-active nav-solutions" onclick="menuNavigation('.nav-solutions')">Solutions</div>
+                    <div class="nav-link nav-about" onclick="menuNavigation('.nav-about')">
+                        <span lang="fr">À propos</span>
+                        <span lang="en">About</span>
+                    </div>
+                    <div class="nav-link nav-impact" onclick="menuNavigation('.nav-impact')">Impact</div>
+                    <div class="nav-link nav-news" onclick="menuNavigation('.nav-news')">
+                        <span lang="fr">Actualités</span>
+                        <span lang="en">News</span>
+                    </div>
+                    <div class="nav-link nav-faq" onclick="menuNavigation('.nav-faq')">
+                        <span lang="fr">FAQ</span>
+                        <span lang="en">Q&A</span>
+                    </div>
+                    <div class="nav-link btn btn-hover btn-contact-menu nav-contact">Contact</div>
+                    <div class="nav-link nav-1line">
+                        <img src="./assets/img/1line.svg" alt="">
+                    </div>
+                    <div class="nav-link nav-lang">
+                        <span class="lang lang-fr lang-selected" onclick="menuNavigationLanguage('.lang-fr')">FR</span>
+                        <span class="lang lang-en" onclick="menuNavigationLanguage('.lang-en')">EN</span>
+                        <img class="arrow-menu-nav-link" src="./assets/img/arrow-menu.png" alt="">
+                        <div class="lang-choice">
+                            <div class="lang lang-fr language-selected" onclick="menuNavigationLanguage('.lang-fr')">
+                                <span lang="fr">Français</span>
+                                <span lang="en">French</span>
+                            </div>
+                            <div class="lang lang-en" onclick="menuNavigationLanguage('.lang-en')">
+                                <span lang="fr">Anglais</span>
+                                <span lang="en">English</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="home">
+            <div class="home-grid">
+                <div class="home-grid-container">
+                    <div class="home-img" id="home-img">
+                        <div class="home-third-circle">
+                            <div class="home-second-circle">
+                                <div class="home-first-circle">
+                                    <img src="./assets/img/img-home.png" alt="" class="img-home">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-text" id="home-text">
+                        <p class="home-main-text">
+                            <span lang="fr">Des solutions solaires innovantes qui apportent à tous un </span>
+                            <span lang="en">Innovative solar solutions providing an </span>
+                            <span class="home-text-bold">
+                                <span lang="fr">accès fiable à l'énergie</span>
+                                <span lang="en">reliable access to energy for everybody</span>
+                            </span>
+                        </p>
+                        <p class="home-secondary-text">
+                            <span lang="fr">
+                                Aujourd'hui, plus de 590 millions de personnes en Afrique sub-saharienne n'ont pas accès à l'électricité. 
+                                Nous avons donc développé des systèmes solaires connectés, abordables et durables pour les ménages, les entreprises et les lieux communautaires.
+                            </span>
+                            <span lang="en">
+                                Nowadays, more than 590 million people in sub-Saharan Africa do not have access to electricity. 
+                                We have therefore developed affordable and sustainable connected solar systems for households, businesses and community places.
+                            </span>
+                            
+                        </p>
+                        <div class="div-btn-kits">
+                            <a class="btn-kits btn-hover" href="#">
+                                <span lang="fr">Découvrez nos kits scolaires</span>
+                                <span lang="en">Click here to discover our school kits </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home-arrow-bottom">
+                <img src="./assets/img/arrow-bottom.svg" alt="" class="svg-arrow-bottom">
+            </div>
+        </section>
+    
+        <section class="about">
+            <div class="about-grid">
+                <div class="about-grid-container">
+                    <div class="about-img" id="about-img">
+                        <img src="./assets/img/img-about.png" alt="" class="img-about">
+                    </div>
+                    <div class="about-text" id="about-text">
+                        <div class="about-title"></div>
+                        <p class="about-main-text">
+                            <span lang="fr">Avancez dans la vie avec une solution adaptée </span>
+                            <span lang="en">Get ahead in your life with a solution </span>
+                            <span class="about-text-bold">
+                                <span lang="fr">à vos besoins</span>
+                                <span lang="en">that suits your needs</span>
+                            </span>
+                        </p>
+                        <p class="about-secondary-text">
+                            <span lang="fr">
+                                Notre team Belgo-Camerounais, composé d'un réseau de techniciens et de commerciaux, 
+                                est issu de toutes les régions du Cameroun. Ensemble, nous sommes sortis des sentiers 
+                                battus pour développer et distribuer des solutions adaptées aux réalités du terrain 
+                                et répondre ainsi à un besoin primordial. 
+                            </span>
+                            <span lang="en">
+                                Our Belgian-Cameroonian team is composed of technicians and salesmen from all regions of Cameroon.
+                                Together, we have gone off the beaten track to develop and diffuse solutions that are suited 
+                                to the reality on the ground and that meet an essential need. 
+                            </span>
+                        </p>
+                        <div class="div-btn-history">
+                            <a href="#" class="btn btn-hover btn-history">
+                                <span lang="fr">Notre histoire</span>
+                                <span lang="en">Our history</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="benefits">
+            <div class="benefits-grid">
+                <div class="benefits-grid-container">
+                    <div class="benefits-text" id="benefits-text">
+                        <div class="benefits-title">
+                            <span lang="fr">Les avantages des </span>
+                            <span lang="en">The benefits of </span>
+                            <span class="benefits-text-yellow">
+                                <span lang="fr">solutions Solarly</span>
+                                <span lang="en">Solarly solutions</span>
+                            </span>
+                        </div>
+                        <div class="benefits-desc">
+                            <div class="benefits-stroke">
+                                <img src="./assets/img/img-stroke.png" alt="" class="img-stroke">
+                            </div>
+                            <span lang="fr">Connectée et intelligente, permettant un suivi à distance</span>
+                            <span lang="en">Connected and intelligent, providing remote monitoring</span>
+                            <div class="benefits-slide">
+                                <img src="./assets/img/left.png" alt="" class="img-left">
+                                <img src="./assets/img/middle.png" alt="" class="img-middle">
+                                <img src="./assets/img/right.png" alt="" class="img-right">
+                            </div>
+                        </div>
+                        <div class="text-slide">1/4</div>
+                    </div>
+                    <div class="link-learn-more">
+                        <a class="btn btn-hover btn-learn-more" href="#">
+                            <span lang="fr">En savoir plus</span>
+                            <span lang="en">Learn more</span>
+                        </a>
+                    </div>
+                    <div class="benefits-img" id="benefits-img">
+                        <div class="benefits-grid-img">
+                            <div id="img-window">
+                                <img src="./assets/img/window.svg" alt="" class=" img-icon">
+                            </div>
+                            <div id="img-battery">
+                                <img src="./assets/img/battery.svg" alt="" class="img-icon">
+                            </div>
+                            <div id="img-benefits">
+                                <img src="./assets/img/img-advantages.png" alt="" class="img-benefits">
+                            </div>
+                            <div class="img-benefits-block" id="img-benefits-block">
+                                <img src="./assets/img/ampoule.svg" alt="" class="img-ampoule img-icon">
+                                <img src="./assets/img/tv.svg" alt="" class="img-tv img-icon">
+                                <img src="./assets/img/frigo.svg" alt="" class="img-frigo img-icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="benefits-thrid-circle">
+                <div class="benefits-second-circle">
+                    <div class="benefits-first-circle"></div>
+                </div>
+            </div>
+            <div class="benefits-circle-responsive">
+                <div class="benefits-thrid-circle-resp">
+                    <div class="benefits-second-circle-resp">
+                        <div class="benefits-first-circle-resp"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
